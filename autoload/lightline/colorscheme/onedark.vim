@@ -1,7 +1,7 @@
-" [onedark.vim](https://github.com/joshdick/onedark.vim/)
+" [onedark_hc.vim](https://github.com/phschaad/onedark_hc.vim/)
 
 " This is a [lightline.vim](https://github.com/itchyny/lightline.vim) colorscheme for use with
-" the [onedark.vim](https://github.com/joshdick/onedark.vim) colorscheme.
+" the [onedark_hc.vim](https://github.com/phschaad/onedark_hc.vim) colorscheme.
 
 let s:colors = onedark#GetColors()
 

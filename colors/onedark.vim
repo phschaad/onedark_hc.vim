@@ -1,45 +1,9 @@
 " vim:fdm=marker
 " Vim Color File
 " Name:       onedark.vim
-" Maintainer: https://github.com/joshdick/onedark.vim/
+" Maintainer: https://github.com/phschaad/onedark_hc.vim/
 " License:    The MIT License (MIT)
-" Based On:   https://github.com/MaxSt/FlatColor/
-
-" A companion [vim-airline](https://github.com/bling/vim-airline) theme is available at: https://github.com/joshdick/airline-onedark.vim
-
-" Color Reference {{{
-
-" The following colors were measured inside Atom using its built-in inspector.
-
-" +---------------------------------------------+
-" |  Color Name  |         RGB        |   Hex   |
-" |--------------+--------------------+---------|
-" | Black        | rgb(40, 44, 52)    | #282c34 |
-" |--------------+--------------------+---------|
-" | White        | rgb(171, 178, 191) | #abb2bf |
-" |--------------+--------------------+---------|
-" | Light Red    | rgb(224, 108, 117) | #e06c75 |
-" |--------------+--------------------+---------|
-" | Dark Red     | rgb(190, 80, 70)   | #be5046 |
-" |--------------+--------------------+---------|
-" | Green        | rgb(152, 195, 121) | #98c379 |
-" |--------------+--------------------+---------|
-" | Light Yellow | rgb(229, 192, 123) | #e5c07b |
-" |--------------+--------------------+---------|
-" | Dark Yellow  | rgb(209, 154, 102) | #d19a66 |
-" |--------------+--------------------+---------|
-" | Blue         | rgb(97, 175, 239)  | #61afef |
-" |--------------+--------------------+---------|
-" | Magenta      | rgb(198, 120, 221) | #c678dd |
-" |--------------+--------------------+---------|
-" | Cyan         | rgb(86, 182, 194)  | #56b6c2 |
-" |--------------+--------------------+---------|
-" | Gutter Grey  | rgb(76, 82, 99)    | #4b5263 |
-" |--------------+--------------------+---------|
-" | Comment Grey | rgb(92, 99, 112)   | #5c6370 |
-" +---------------------------------------------+
-
-" }}}
+" Based On:   https://github.com/joshdick/onedark.vim/
 
 " Initialization {{{
 
@@ -54,10 +18,7 @@ set t_Co=256
 let g:colors_name="onedark"
 
 " Set to "256" for 256-color terminals, or
-" set to "16" to use your terminal emulator's native colors
-" (a 16-color palette for this color scheme is available; see
-" < https://github.com/joshdick/onedark.vim/blob/master/README.md >
-" for more information.)
+" set to "16" to use your terminal emulator's native colors.
 if !exists("g:onedark_termcolors")
   let g:onedark_termcolors = 256
 endif

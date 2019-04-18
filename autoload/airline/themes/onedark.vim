@@ -1,7 +1,7 @@
-" [onedark.vim](https://github.com/joshdick/onedark.vim/)
+" [onedark_hc.vim](https://github.com/phschaad/onedark_hc.vim/)
 
 " This is a [vim-airline](https://github.com/vim-airline/vim-airline) theme for use with
-" the [onedark.vim](https://github.com/joshdick/onedark.vim) colorscheme.
+" the [onedark_hc.vim](https://github.com/phschaad/onedark_hc.vim) colorscheme.
 
 " It is based on vim-airline's ["tomorrow" theme](https://github.com/vim-airline/vim-airline-themes/blob/master/autoload/airline/themes/tomorrow.vim).
 function! airline#themes#onedark#refresh()
