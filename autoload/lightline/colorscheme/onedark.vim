@@ -14,6 +14,7 @@ if get(g:, 'onedark_termcolors', 256) == 16
   let s:term_white = s:colors.white.cterm16
   let s:term_black = s:colors.black.cterm16
   let s:term_grey = s:colors.cursor_grey.cterm16
+  let s:term_lightgrey = s:colors.special_grey.cterm
 else
   let s:term_red = s:colors.red.cterm
   let s:term_green = s:colors.green.cterm
@@ -23,6 +24,7 @@ else
   let s:term_white = s:colors.white.cterm
   let s:term_black = s:colors.black.cterm
   let s:term_grey = s:colors.cursor_grey.cterm
+  let s:term_lightgrey = s:colors.special_grey.cterm
 endif
 
 let s:red = [ s:colors.red.gui, s:term_red ]
@@ -33,19 +35,20 @@ let s:purple = [ s:colors.purple.gui, s:term_purple ]
 let s:white = [ s:colors.white.gui, s:term_white ]
 let s:black = [ s:colors.black.gui, s:term_black ]
 let s:grey = [ s:colors.visual_grey.gui, s:term_grey ]
+let s:lightgrey = [ s:colors.special_grey.gui, s:term_lightgrey ]
 
 let s:p = {'normal': {}, 'inactive': {}, 'insert': {}, 'replace': {}, 'visual': {}, 'tabline': {}}
-let s:p.normal.left = [ [ s:black, s:green ], [ s:white, s:grey ] ]
-let s:p.normal.right = [ [ s:black, s:green ], [ s:white, s:grey ] ]
-let s:p.inactive.left =  [ [ s:white, s:grey ], [ s:white, s:grey ] ]
+let s:p.normal.left = [ [ s:black, s:green ], [ s:white, s:lightgrey ] ]
+let s:p.normal.right = [ [ s:black, s:green ], [ s:white, s:lightgrey ] ]
+let s:p.inactive.left =  [ [ s:white, s:lightgrey ], [ s:white, s:lightgrey ] ]
 let s:p.inactive.right = [ [ s:black, s:white ], [ s:black, s:white ] ]
-let s:p.insert.left = [ [ s:black, s:blue ], [ s:white, s:grey ] ]
-let s:p.insert.right = [ [ s:black, s:blue ], [ s:white, s:grey ] ]
-let s:p.replace.left = [ [ s:black, s:red ], [ s:white, s:grey ] ]
-let s:p.replace.right = [ [ s:black, s:red ], [ s:white, s:grey ] ]
-let s:p.visual.left = [ [ s:black, s:purple ], [ s:white, s:grey ] ]
-let s:p.visual.right = [ [ s:black, s:purple ], [ s:white, s:grey ] ]
-let s:p.normal.middle = [ [ s:white, s:black ] ]
+let s:p.insert.left = [ [ s:black, s:blue ], [ s:white, s:lightgrey ] ]
+let s:p.insert.right = [ [ s:black, s:blue ], [ s:white, s:lightgrey ] ]
+let s:p.replace.left = [ [ s:black, s:red ], [ s:white, s:lightgrey ] ]
+let s:p.replace.right = [ [ s:black, s:red ], [ s:white, s:lightgrey ] ]
+let s:p.visual.left = [ [ s:black, s:purple ], [ s:white, s:lightgrey ] ]
+let s:p.visual.right = [ [ s:black, s:purple ], [ s:white, s:lightgrey ] ]
+let s:p.normal.middle = [ [ s:white, s:grey ] ]
 let s:p.inactive.middle = [ [ s:white, s:grey ] ]
 let s:p.tabline.left = [ [ s:white, s:grey ] ]
 let s:p.tabline.tabsel = [ [ s:black, s:white ] ]
